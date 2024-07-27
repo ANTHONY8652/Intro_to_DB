@@ -31,10 +31,10 @@ CREATE TABLE IF NOT EXISTS Orders(
 -- create meza ya kenye wameitisha
 );
 CREATE TABLE IF NOT EXISTS Order_details(
-    order_details INT PRIMARY KEY,
+    order_details INT AUTO_INCREMENT PRIMARY KEY,
     order_id INT,
     book_id INT,
     quantity INT DOUBLE,
-    FOREIGN KEY(order_id) REFERENCES Orders(order_id),
-    FOREIGN KEY(book_id) REFERENCES Books(book_id),
+    FOREIGN KEY (order_id) REFERENCES Orders(order_id),
+    FOREIGN KEY (book_id) REFERENCES Books(book_id),
 );
