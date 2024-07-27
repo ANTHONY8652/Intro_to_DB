@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS Orders(
     FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
 -- create meza ya kenye wameitisha
 );
-CREATE TABLE IF NOT EXISTS Order_details(
+CREATE TABLE IF NOT EXISTS Order_Details(
     order_details INT AUTO_INCREMENT PRIMARY KEY,
     order_id INT,
     book_id INT,
