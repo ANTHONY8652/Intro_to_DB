@@ -16,7 +16,7 @@ CREATE TABLE Books(
     FOREIGN KEY (author_id) REFERENCING Authors(author_id) 
 );
 -- create customers meza
-CREATE TABLE IF NOT EXISTS customers(
+CREATE TABLE IF NOT EXISTS Customers(
     customer_id INT AUTO_INCREMENT PRIMARY KEY,
     customer_name VARCHAR(215) NOT NULL,
     email VARCHAR(215) UNIQUE NOT NULL,
