@@ -24,10 +24,10 @@ CREATE TABLE IF NOT EXISTS Customers(
 );
 -- create orders meza
 CREATE TABLE IF NOT EXISTS Orders(
-    order_id INT PRIMARY KEY,
+    order_id INT AUTO_INCREMENT PRIMARY KEY,
     customer_id INT,
     order_date DATE NOT NULL,
-    FOREIGN KEY(customer_id) REFERENCES Customer(customer_id)
+    FOREIGN KEY (customer_id) REFERENCES Customer (customer_id)
 -- create meza ya kenye wameitisha
 );
 CREATE TABLE IF NOT EXISTS Order_details(
