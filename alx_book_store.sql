@@ -1,6 +1,6 @@
-CREATE DATABASE IF NOT EXISTS ALX_BOOK_STORE
+CREATE DATABASE IF NOT EXISTS alx_book_store;
 
-USE ALX_BOOK_STORE
+USE alx_book_store;
 -- create meza ya Wallah Bin Wallah
 CREATE TABLE Authors(
     author_id INT AUTO_INCREMENT PRIMARY KEY,
